@@ -1,0 +1,14 @@
+//syntax = "proto3";
+//
+////option java_package = "com.kotlin.mvvm.structure.datastore";//Replace it with your package.
+////option java_multiple_files = true;
+//
+//message UserProfile {
+//  int32 _id = 1;
+//  string firstName = 2;
+//  string lastName = "",
+//  string handle = "",
+//  string email = "",
+//  string role = ""
+//// Add more fields as needed string username = 1;
+//}
