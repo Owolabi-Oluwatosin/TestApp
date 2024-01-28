@@ -80,7 +80,7 @@ fun MyTextFieldComponent(
     val textValue = remember {
         mutableStateOf("")
     }
-    val localFocusManager = LocalFocusManager.current
+//    val localFocusManager = LocalFocusManager.current
 
     OutlinedTextField(
         modifier = Modifier
@@ -243,9 +243,9 @@ fun ButtonComponent(
     onButtonClicked: () -> Unit,
 //    isEnabled: Boolean = false
 ) {
-    val isLoading = remember {
-        mutableStateOf(false)
-    }
+//    val isLoading = remember {
+//        mutableStateOf(false)
+//    }
 
     Button(
         modifier = Modifier

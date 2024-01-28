@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestApp"
         tools:targetApi="31"
-		android:name=".HiltApplication">
+        android:name=".HiltApplication"
+		>
         <activity
             android:name=".MainActivity"
             android:exported="true"

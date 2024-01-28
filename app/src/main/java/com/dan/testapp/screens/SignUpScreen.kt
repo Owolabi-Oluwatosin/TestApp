@@ -2,13 +2,8 @@ package com.dan.testapp.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -39,9 +34,15 @@ fun SignUpScreen(userSignUpViewModel: UserSignUpViewModel = viewModel()) {
             when (val state = userSignUpViewModel.userSignUpState.collectAsState().value) {
                 is UserSignUpState.Empty -> SignUpContent()
                 is UserSignUpState.Loading -> LoadingAnimation()
-                is UserSignUpState.Success -> PostOfficeAppRouter.navigateTo(Screen.LoginScreen)
+                is UserSignUpState.Success -> {
+                    PostOfficeAppRouter.navigateTo(Screen.LoginScreen)
+//                    DisposableEffect(userSignUpViewModel) {
+//                        onDispose {
+//
+//                        }
+//                    }
+                }
                 is UserSignUpState.Error -> ErrorCompose(error = state.message)
-                else -> "Something Went Wrong"
             }
 
         }

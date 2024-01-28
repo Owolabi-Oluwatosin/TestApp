@@ -1,5 +1,8 @@
 package com.dan.testapp.data.remotes.models.usersignin
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class User(
    val _id: String = "",
    val firstName: String = "",

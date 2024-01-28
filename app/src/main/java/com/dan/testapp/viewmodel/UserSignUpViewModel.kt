@@ -14,7 +14,7 @@ import okio.IOException
 import retrofit2.HttpException
 import javax.inject.Inject
 
-//(context: Context) : ViewModel()
+
 @HiltViewModel
 class UserSignUpViewModel @Inject constructor(private val signUpRepository: SignupRepository): ViewModel()  {
     private val _userSignUpState = MutableStateFlow<UserSignUpState>(UserSignUpState.Empty)
@@ -26,7 +26,7 @@ class UserSignUpViewModel @Inject constructor(private val signUpRepository: Sign
         viewModelScope.launch(Dispatchers.IO) {
             try {
 
-                val signUpResponse = signUpRepository.userSignUp(_userSignUp)
+                val signUpResponse = signUpRepository.userSignup(_userSignUp)
                 _userSignUpState.value = UserSignUpState.Success(signUpResponse)
             }
             catch (exception: HttpException){
