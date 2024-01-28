@@ -3,12 +3,11 @@ package com.dan.testapp.viewmodel
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import androidx.lifecycle.viewModelScope
-import com.dan.testapp.data.remotes.models.usersignin.UserSignInRequest
+import com.dan.testapp.models.usersignin.UserSignInRequest
 import com.dan.testapp.repository.SignInRepository
 import com.dan.testapp.viewmodel.state.UserSignInState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import okio.IOException

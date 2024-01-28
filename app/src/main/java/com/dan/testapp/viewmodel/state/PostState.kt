@@ -1,6 +1,6 @@
 package com.dan.testapp.viewmodel.state
 
-import com.dan.testapp.data.remotes.models.userpost.UserPost
+import com.dan.testapp.models.userpost.UserPost
 
 sealed class PostState {
     object Empty: PostState()

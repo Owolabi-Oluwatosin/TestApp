@@ -1,4 +1,4 @@
-package com.dan.testapp.data.remotes.models.usersignup
+package com.dan.testapp.models.usersignup
 
 import kotlinx.serialization.Serializable
 

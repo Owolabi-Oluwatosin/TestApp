@@ -3,7 +3,7 @@ package com.dan.testapp.viewmodel
 import kotlinx.coroutines.flow.MutableStateFlow
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dan.testapp.data.remotes.models.usersignup.UserSignUp
+import com.dan.testapp.models.usersignup.UserSignUp
 import com.dan.testapp.repository.SignupRepository
 import com.dan.testapp.viewmodel.state.UserSignUpState
 import dagger.hilt.android.lifecycle.HiltViewModel

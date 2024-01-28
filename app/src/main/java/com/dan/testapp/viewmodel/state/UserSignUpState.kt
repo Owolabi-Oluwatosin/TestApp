@@ -1,6 +1,6 @@
 package com.dan.testapp.viewmodel.state
 
-import com.dan.testapp.data.remotes.models.usersignup.UserSignUpResponse
+import com.dan.testapp.models.usersignup.UserSignUpResponse
 
 sealed class UserSignUpState {
     object Empty: UserSignUpState()

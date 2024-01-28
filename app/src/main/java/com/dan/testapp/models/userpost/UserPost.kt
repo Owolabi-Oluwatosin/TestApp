@@ -1,4 +1,4 @@
-package com.dan.testapp.data.remotes.models.userpost
+package com.dan.testapp.models.userpost
 
 data class UserPost(
     val content: String = "",

@@ -1,7 +1,7 @@
 package com.dan.testapp.repository
 
-import com.dan.testapp.data.remotes.models.usersignin.UserSignInRequest
-import com.dan.testapp.data.remotes.models.usersignin.UserSignInResponse
+import com.dan.testapp.models.usersignin.UserSignInRequest
+import com.dan.testapp.models.usersignin.UserSignInResponse
 import com.dan.testapp.util.BASE_URL
 import com.dan.testapp.util.SIGNIN_ROUTE
 import io.ktor.client.*

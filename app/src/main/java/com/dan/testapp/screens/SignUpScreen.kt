@@ -13,7 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.dan.testapp.R
 import com.dan.testapp.components.*
-import com.dan.testapp.data.remotes.models.usersignup.UserSignUp
+import com.dan.testapp.models.usersignup.UserSignUp
 import com.dan.testapp.navigation.PostOfficeAppRouter
 import com.dan.testapp.navigation.Screen
 import com.dan.testapp.navigation.SystemBackButtonHandler

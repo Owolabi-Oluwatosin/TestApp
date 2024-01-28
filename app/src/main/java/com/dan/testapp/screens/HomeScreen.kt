@@ -13,7 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.dan.testapp.components.TopNavBar
-import com.dan.testapp.data.remotes.models.usersignin.UserSignInResponse
+import com.dan.testapp.models.usersignin.UserSignInResponse
 import com.dan.testapp.util.LoadingAnimation
 import com.dan.testapp.viewmodel.UserSignInViewModel
 import com.dan.testapp.viewmodel.state.UserSignInState
